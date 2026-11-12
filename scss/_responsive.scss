@@ -1,0 +1,39 @@
+@use "mixins" as *;
+@use "tokens" as t;
+
+@include respond(t.$tablet) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include respond(t.$mobile) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+
+    &.open {
+      display: flex;
+    }
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,62 @@
+@use "mixins" as *;
+
+header {
+  padding: 18px 6%;
+  background: var(--card);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+
+  a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+.hero {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+#gallery,
+#media {
+  padding: 50px 7%;
+}
+
+#gallery h2,
+#media,
+#about {
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+#about {
+  padding: 50px 20px;
+  background: var(--card);
+}
+
+#media {
+  video {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--main);
+  color: white;
+}

@@ -1,0 +1,21 @@
+$bg: #f4f7f8;
+$text: #18343a;
+$main: #12676c;
+$card: white;
+
+$mobile: 600px;
+$tablet: 900px;
+
+:root {
+  --bg: #{$bg};
+  --text: #{$text};
+  --main: #{$main};
+  --card: #{$card};
+}
+
+body.dark {
+  --bg: #172326;
+  --text: white;
+  --main: #65c8c0;
+  --card: #26383c;
+}

@@ -1,0 +1,11 @@
+$utilities: (
+  "center": center,
+  "left": left,
+  "right": right
+);
+
+@each $name, $value in $utilities {
+  .text-#{$name} {
+    text-align: $value;
+  }
+}
